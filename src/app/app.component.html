@@ -1,3 +1,18 @@
-<div>
-  aaaaa
-</div>
+<main>
+  <div class="container">
+    <blog-title></blog-title>
+    <div class="responsive-layout">
+      <div>
+        <large-news [news]="news[currentNews]"></large-news>
+      </div>
+      <div>
+        <div *ngFor="let smallNew of news; let indexOfelement = index">
+          <small-news
+            [isCurrentNews]="indexOfelement == currentNews"
+            [news]="smallNew"
+          ></small-news>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

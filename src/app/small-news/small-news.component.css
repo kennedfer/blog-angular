@@ -1,0 +1,35 @@
+.small-news-container {
+  padding: 10px;
+
+  display: flex;
+  gap: 10px;
+  place-items: center;
+
+  flex-grow: 1;
+
+  border-radius: 6px;
+
+  transition: 1s;
+}
+
+.small-news-container > img {
+  width: 30%;
+}
+
+span {
+  color: gray;
+  font-size: small;
+}
+
+h3 {
+  color: white;
+  font-size: small;
+}
+
+.selected-news {
+  background-color: rgb(0, 0, 0);
+}
+
+.selected-news {
+  color: red;
+}

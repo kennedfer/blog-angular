@@ -1,0 +1,59 @@
+.large-news-container {
+  display: flex;
+  flex-direction: column;
+
+  flex-grow: 1;
+
+  border-radius: 5px;
+  gap: 5px;
+}
+
+img {
+  width: 100%;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.progress-bar {
+  background-color: white;
+  height: 2px;
+
+  animation: 10s infinite normal progress;
+}
+
+@keyframes progress {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+span {
+  color: gray;
+}
+
+h2 {
+  color: white;
+  font-size: larger;
+}
+
+p {
+  color: gray;
+
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Número de linhas antes de cortar o texto */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%; /* Certifica-se de que o elemento ocupe toda a largura disponível */
+}
+
+.selected-news > div {
+  color: red;
+}
