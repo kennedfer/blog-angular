@@ -13,10 +13,8 @@ import { SmallNewsComponent } from './small-news/small-news.component';
     LargeNewsComponent,
     SmallNewsComponent,
   ],
-  imports: [
-    BrowserModule
-  ],
+  imports: [BrowserModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
